@@ -1,0 +1,197 @@
+body {
+  font-family: sans-serif;
+  background: linear-gradient(-45deg, #252f46 0%, #101021 100%);
+  overflow-x: hidden;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+label {
+  font-family: 'Nunito Sans', sans-serif;99
+  display: block;
+  color: white;
+  margin-bottom: 0.5em;
+}
+
+#sendP {
+  color: white;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 900;
+  font-size: 2ch;
+  text-align: center;
+  background-color: #12142b;
+  transition: all 0.15s ease-in-out;
+  border-radius: 10ch;
+}
+
+#sendP:hover{
+  background-color: #171631;
+}
+
+h1 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 900;
+}
+
+
+#sendBtn{
+  transition: all 0.3s ease-in-out
+}
+
+#sendBtn:hover{
+  background-color: #272a30;
+}
+
+#UserName {
+  font-family: 'Nunito Sans', sans-serif;
+  width: 100%;
+  height: 20px;
+}
+
+textarea {
+  font-family: 'Nunito Sans', sans-serif;
+  border-radius: 1ch;
+  color: white;
+  background-color: #1c1f24;
+  width: 100%;
+  height: 100px;
+  /*font-size: 10ch;*/
+  transition: all 0.15s ease-in-out;
+  box-shadow: 0px 0px 0px 0px #FFFFFF;
+}
+
+#testNa {
+  font-family: 'Nunito Sans', sans-serif;
+  color: #e8e8e8;
+  text-align: center;
+  bottom: 10%;
+}
+
+textarea:hover {
+  background-color: #272a30;
+  box-shadow: 0px 0px 14px 0px #FFFFFF;
+}
+
+input[type="submit"] {
+  margin-top: 1em;
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 15%; 
+  position: fixed; 
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, #0A0E1D 0%, #101021 100%);
+  overflow-x: hidden; 
+  padding-top: 20px;
+}
+
+.notificationDiv {
+  height: 15%;
+  width: 20%; 
+  position: fixed; 
+  z-index: 1;
+  top: 45%;
+  left: 43.5%;
+  background-color: #868e9c; 
+  opacity: 0;
+  overflow-x: hidden; 
+  padding-top: 20px;
+}
+
+#tempDiv{
+  height: 40ch;
+  width: 90%; 
+  background-color: #252b33; 
+  overflow-x: hidden; 
+  opacity: 0;
+  padding-top: 20px;
+}
+
+#centerDiv1{
+  width: 107%; 
+}
+
+#bottomBarDiv{
+  height: 40%;
+  width: 85%; 
+  position: fixed; 
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, #0A0E1D 0%, #101021 100%);
+  opacity: 0.8;
+  overflow-x: hidden; 
+  /*padding-top: 20px;*/
+  left: 15%;
+  top: 70%;
+}
+
+
+.sidenav h1 {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #c2c2c2;
+  background-color: #0a1524;
+  border-radius: 1ch;
+  display: block;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+#displayData {
+  font-family: 'Nunito Sans', sans-serif;
+  color: #575757;
+  text-align: center;
+  font-size: 2ch;
+  width: 75%; 
+  height: 100%;
+  transform: translate(25%,0px);
+-webkit-transform: translate(25%,0px);
+-moz-transform: translate(25%,0px);
+}
+
+#centerDiv1{
+  width: 75%; 
+  transform: translate(25%,0px);
+-webkit-transform: translate(25%,0px);
+-moz-transform: translate(25%,0px);
+}
+
+.sidenav h1:hover {
+  color: #f1f1f1;
+  background-color: #1c2530;
+}
+
+
+.main {
+  margin-left: 160px;
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
