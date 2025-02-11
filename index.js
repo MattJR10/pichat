@@ -1,9 +1,9 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const fs = require("fs");
-const cron = require("node-cron")
+//const cron = require("node-cron")
 const app = express();
-const sqlite3 = require('sqlite3');
+//const sqlite3 = require('sqlite3');
 const port = 3000;
 var enabled = true
 
@@ -195,10 +195,7 @@ console.log("set schedule")
 // ...
 
 // Schedule tasks to be run on the server.
-cron.schedule('1 */3 * * *', function() {
 
-  fs.writeFile('data.txt', '', function() { console.log('chat cleared at ' + functionTime()); })
-});
 
 var formatDM = "toID||||fromID||||fromname||||text"
 
